@@ -16,7 +16,7 @@ import CarouselView from '@/components/CarouselView.vue';
                         <v-row no-gutters >
                             <v-col cols="12" md="2" class="">
                                 <v-img
-                                    src="../../assets/img-1.svg"                            
+                                    src="../../assets/img-1.svg"                           
                                     width="100"
                                 >
                                 </v-img>
