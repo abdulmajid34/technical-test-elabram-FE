@@ -18,10 +18,21 @@ const routes = [
     component:  () => import('@/views/Auth/LoginPage.vue')
   },
   {
-    path: '/dashboard-overview',
-    name: 'Dashboard-Overview',
-    component:  () => import('@/views/Dashboard/OverviewPage.vue')
-  }
+    path: '/dashboard',
+    children: [
+      {
+        path: 'overview',
+        name: 'Dashboard-Overview',
+        component:  () => import('@/views/Dashboard/OverviewPage.vue')
+      },
+      {
+        path: 'employee-stats',
+        name: 'Employee-Stats',
+        component:  () => import('@/views/Dashboard/EmployeeStatsPage.vue')
+      }
+    ]
+  },
+  
   
 ]
 

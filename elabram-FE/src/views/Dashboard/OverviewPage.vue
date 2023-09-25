@@ -1,56 +1,11 @@
 <script setup>
+import NavbarView from '@/components/NavbarView.vue'
 </script>
 
 <template>
-    <div style="background-color: #eaeaea; height: auto">
-        <div style="background-color: #FFFFFF; height: 120px; box-shadow: 10px grey;">
-        <v-row>
-            <v-col cols="12" md="1">
-                    <div class="my-5" style="border-right: 1px solid #00000029;">
-                        <v-img
-                        class="mx-auto"
-                        src="../../assets/axdif-icon-square-white.svg"
-                        width="60"
-                        height="60"
-                        >
-                        </v-img>
-                    </div>
-                </v-col>
-                <v-col cols="12" md="10">
-                    <ul class="py-10" style="list-style: none;">
-                        <div class="d-flex">
-                            <div class="mx-8">
-                                <li>Overview</li>
-                            </div>
-                            <div class="mx-8">
-                                <li>Employee Stats</li>
-                            </div>
-                            <div class="mx-8">
-                                <li>Submission</li>
-                            </div>
-                            <div class="mx-8">
-                                <li>Task</li>
-                            </div>
-                            <div class="mx-8">
-                                <li>Chat</li>
-                            </div>
-                            <div class="mx-8">
-                                <li>Payroll</li>
-                            </div>
-                        </div>
-                    </ul>
-                </v-col>
-                <v-col cols="12" md="1">
-                    <div class="my-7">
-                        <v-img
-                        src="../../assets/ProfilePicture.jpg"
-                        width="48"
-                        height="48"
-                        ></v-img>
-                    </div>
-                </v-col>
-            </v-row>
-        </div>
+    <div style="background-color: #eaeaea; height: auto;">
+        <!-- navbar -->
+        <NavbarView />
 
         <!-- content -->
         <v-container style="margin: 0 20px 0 80px">
@@ -69,7 +24,7 @@
                                     </v-col>
                                     <v-col cols="12" md="4">
                                         <div class="d-flex">
-                                            <span class="px-4 py-1">Period</span>
+                                            <span class="px-4 py-1" style="color: #212121;">Period</span>
                                             <div class="" style="width: 150px;">
                                                 <v-card class="px-2">
                                                     <input type="date">
